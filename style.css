@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube {
+  position: relative;
+}
+
+.cube img {
+  width: 10rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.avator {
+  width: 1.1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section {
+  padding: 1rem;
+  width: 12rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 0.8rem;
+}
+
+.equi-text {
+  font-size: 0.7rem;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: white;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.detail {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.6rem;
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.eth-sec {
+  color: hsl(178, 100%, 50%);
+  font-size: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.icon-eth {
+  width: 6px;
+  margin-right: 2px;
+}
+
+.clock {
+  margin-top: 5px;
+  width: 0.6rem;
+}
+
+.time-sec {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.5rem;
+}
+
+.author {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.5rem;
+  letter-spacing: 0.5px;
+  margin: auto 0;
+}
+
+span {
+  color: white;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.creator-sec {
+  display: flex;
+  align-items: start;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 93%;
+  background: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.cube:hover .overlay {
+  opacity: 0.4;
+}
+
+span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.equi-text:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px !important;
+  display: none;
+  transition-duration: 500ms;
+}
+
+.cube:hover .view {
+  display: block;
+}
